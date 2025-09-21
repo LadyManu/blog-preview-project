@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   display: flex;
+  flex-direction: column;   
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Figtree', sans-serif;
+  background-color: hsl(47, 88%, 63%);
+}
+    
+
+.card{
+    width: 400px;
+    background-color: white;
+    border-radius: 20px;
+    max-width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border: 1px solid black;
+    box-shadow: 10px 11px 0px black;
+    margin: 0 auto 20px;
+}
+.tag {
+  width: fit-content;
+  background-color: hsl(47, 88%, 63%);
+  padding: 7px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  color: hsl(0, 0%, 7%);
+  margin: 10px 0;
+}
+.date {
+    font-size: 14px;
+    padding-bottom: 5px;
+    margin: 10px 0;
+}
+h1{
+    font-size: 24px;
+    font-weight: bold;
+    color: hsl(0, 0%, 7%);
+    margin: 10px 0;
+}
+.card-description{
+    font-size: 16px;
+    color: hsl(0, 0%, 27%);
+    line-height: 1.5;
+    margin: 10px 0;
+}
+.author-info{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 10px 0;
+}
+.author-avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.card-image{
+    width: 100%;
+    border-radius: 15px;
+    height: auto;
+}
+footer {
+  margin-top: 20px; 
+  font-size: 14px;
+  color: hsl(0, 0%, 7%);
+}
+footer a {
+  color: hsl(0, 0%, 7%);
+  text-decoration: none;
+  font-weight: bold;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+h1:hover {
+  color: hsl(47, 88%, 63%);
+  cursor: pointer;
+}
+@media (max-width: 374px) {
+  .card {
+    width: 100%;
+  }
+  h1 { font-size: 18px; }
+  .card-description { font-size: 13px; }
+  .date { font-size: 12px; }
+  .tag { font-size: 12px; padding: 5px 8px; }
+  footer { font-size: 12px; }
+}
+
+@media (min-width: 1440px) {
+  .card {
+    width: 400px;
+  }
+  h1 { font-size: 24px; }
+  .card-description { font-size: 16px; }
+  .date { font-size: 14px; }
+  .tag { font-size: 14px; padding: 7px 10px; }
+  footer { font-size: 14px; }
+}
